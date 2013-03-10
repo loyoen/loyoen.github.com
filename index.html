@@ -6,6 +6,7 @@ title: 我的blog
 <p>我想知道abc</p>
 <ul>
    {% for post in site.posts %}
-   <li>{{ post.date | date_to_string }} <a href="{{ post.url}}">{{ post.title }}</a><br></li>
+   <li>{{ post.date | date_to_string }} <a href="{{ post.url}}">{{ post.title }}</a></li>
+   <br>
    {% endfor %}
 </ul>
